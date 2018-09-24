@@ -16,7 +16,7 @@ if os.path.isfile(path_file1) == True:
         text_string = f.read()
         result = chardet.detect(text_string)        
         text_enc = result['encoding']        
-        with open(path_file1, encoding = text_enc) as file1: # Search the words in the file list.  
+        with open(path_file1, encoding = text_enc) as file1: 
             read_file1 = file1.read() 
 else:
     print('Ошибка ввода имени файла!')
